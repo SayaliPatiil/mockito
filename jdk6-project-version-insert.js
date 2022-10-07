@@ -24,7 +24,7 @@ function injectProjectVersionForJavadocJDK6(projectVersionString, javadoc7Header
         /* Cleans up mess with Javadoc 1.7 */
         $("body > h1").removeAttributes().attr("class", "bar").attr("title", projectVersionString);
         /* Cleans up mess with Javadoc 1.7 with Javadoc 1.6 */
-        $("td " + javadoc7Header).remove();
-        $("td " + javadoc7Footer).remove();
+        ("td " + javadoc7Header).remove();
+        ("td " + javadoc7Footer).remove();
     });
 }
